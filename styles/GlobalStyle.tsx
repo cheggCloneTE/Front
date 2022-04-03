@@ -19,8 +19,6 @@ const style = css`
     box-sizing: border-box;
   }
   @font-face {
-    font-family: 'Pretendard';
-    src: url('./fonts/Pretendard-Black.woff');
   }
 `;
 

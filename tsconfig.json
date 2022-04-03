@@ -13,10 +13,10 @@
     "paths": {
       "@hooks/*": ["hooks/*"],
       "@components/*": ["components/*"],
-      "@layouts/*": ["layouts/*"],
       "@pages/*": ["pages/*"],
       "@utils/*": ["utils/*"],
-      "@typings/*": ["typings/*"]
+      "@typings/*": ["typings/*"],
+      "@styles/*": ["styles/*"]
     }
   }
 }

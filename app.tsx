@@ -5,15 +5,16 @@ import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 
-import App from './layouts/App';
+import GlobalStyle from '@styles/GlobalStyle';
+import Router from './routers/Router';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL =
-  process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3090';
+axios.defaults.baseURL = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3090';
 
 render(
   <BrowserRouter>
-    <App />
+    <GlobalStyle />
+    <Router />
   </BrowserRouter>,
   document.querySelector('#app'),
 );

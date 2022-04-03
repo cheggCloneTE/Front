@@ -1,11 +1,11 @@
 import React from 'react';
 import loadable from '@loadable/component';
 
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 const HomePage = loadable(() => import('@pages/HomePage'));
 
-const App = () => {
+const Router = () => {
   return (
     <Switch>
       <Route path="/" component={HomePage} />
@@ -13,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Router;

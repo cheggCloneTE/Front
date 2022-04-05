@@ -59,6 +59,14 @@ const config: Configuration = {
         test: /\.css?$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        //이미지 경로 설정하는법
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: 'img/[name].[ext]', //[폴더명][파일명][ext]
+        },
+      },
     ],
   },
   plugins: [
